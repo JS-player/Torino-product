@@ -64,7 +64,8 @@ button {
 }
 .header-text h4 span {
   color: #c73036;
-  font-family: fantasy;
+  font-family: sans-serif;
+  font-weight: bolder;
 }
 .header-logo {
   background: url(../images/logo.jfif) no-repeat center;
@@ -478,7 +479,8 @@ button {
   border-radius: 20px;
   display: flex;
   align-items: center;
-  line-height: 1.2;
+  line-height: 1.4;
+  direction: rtl;
 }
 @media (min-width: 500px) {
   .review-box .txt {
@@ -540,7 +542,6 @@ button {
   bottom: -25px;
   position: relative;
   direction: rtl;
-  letter-spacing: 1.5px;
   text-shadow: -2px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
     1px 1px 0 #000;
 }
@@ -587,6 +588,9 @@ button {
 @media (max-width: 500px) {
   .free-charge {
     font-size: 14px;
+  }
+  .return-if {
+    font-size: 13px;
   }
 }
 @media (max-width: 380px) {
@@ -727,6 +731,9 @@ form span {
   .cons {
     justify-content: space-around;
   }
+  .price h3 {
+    letter-spacing: 1.5px;
+  }
 }
 @media (max-width: 650px) {
   .cons {
@@ -851,6 +858,11 @@ form span {
     font-size: 14px;
     bottom: -10px;
   }
+  .return-if {
+    position: relative;
+    bottom: -6px;
+    font-size: 14px;
+  }
   .Order-and-price .container {
     width: 45vw;
     margin-right: unset;
@@ -891,6 +903,10 @@ form span {
   }
   .free-charge {
     font-size: 3.2vw;
+  }
+
+  .return-if {
+    font-size: 3.1vw;
   }
 }
 @media (min-width: 601px) and (max-width: 767px) {
@@ -965,4 +981,24 @@ form .mainInput {
   font-weight: bold;
 }
 @media (min-width: 1000px) {
+}
+.return-if {
+  text-align: center;
+  padding-top: 7px;
+}
+
+@media (min-width: 800px) {
+  .free-charge {
+    font-size: 16px;
+    bottom: -10px;
+  }
+  .return-if {
+    bottom: -10px;
+    font-size: 16px;
+  }
+}
+@media (max-width: 370px) {
+  .return-if {
+    font-size: 12px;
+  }
 }
